@@ -1,0 +1,8 @@
+# VSCode folder
+.vscode
+
+# PPM images
+*.ppm
+
+# PNG images
+*.png
