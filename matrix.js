@@ -153,3 +153,15 @@ file.makeLine(others.arr[0][2], others.arr[1][2], others.arr[0][3], others.arr[1
 console.log(others.toString())
 
 file.imgWrite()
+
+
+var image = new Matrix(4, 50)
+for (i =0; i < 50; i++) {
+    image.addPoint(Math.ceil(Math.random() * i) * 20, Math.ceil(Math.random() * i) * 20, 1)
+}
+
+for (i =0; i < 49; i++) {
+    file.makeLine(image.arr[0][i], image.arr[1][i], image.arr[0][i + 1], image.arr[1][i + 1])
+}
+
+file.imgWrite()
